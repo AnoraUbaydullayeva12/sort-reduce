@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon List</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./pokemons.js"></script>
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <div class="aboutThe">
+        <img src="./poke.png" alt="poke">
+    </div>
+    <div class="search-bar searchBar">
+        <input type="text" id="searchInput" placeholder="Search Pokemon by name..." />
+        <!-- Sort select placed between search input and button -->
+        <select id="sortSelect">
+            <option>Sort</option>
+            <option value="az">Sort A–Z</option>
+            <option value="za">Sort Z–A</option>
+        </select>
+        <button id="searchButton">Search</button>
+    </div>
+
+    <!-- The list container -->
+    <ul class="list"></ul>
+
+    <button id="favoritesButton" class="favorites-button">
+        <img src="./bookmark.png" alt="Favorites">
+    </button>
+
+    <div id="favoritesMenu" class="favorites-menu">
+        <h2>Favorite Pokemon</h2>
+        <ul class="favorites-list"></ul>
+        <button id="clearFavoritesButton" class="clear-button">
+            <i class="fas fa-trash"></i> Clear All
+        </button>
+        <button id="closeFavoritesButton" class="close-button">X</button>
+    </div>
+</body>
+
+</html>
